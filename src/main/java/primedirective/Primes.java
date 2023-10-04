@@ -16,11 +16,12 @@ public class Primes {
      */
     public static List<Integer> getPrimes(int upperBound) {
         List<Integer> primes = new ArrayList<>();
-        upperBound++;
+
 
         if (upperBound < 2) {
             return primes;
         }
+        upperBound++;
 
         int n = (upperBound - 2) / 2;
         Set<Integer> candidates = new TreeSet<>();
